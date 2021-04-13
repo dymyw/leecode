@@ -10,18 +10,17 @@ package dymyw_leecode
  * }
  */
 func hasCycle(head *ListNode) bool {
-	// 引入集合
-	set := map[*ListNode]bool{}
+	// 多指针
+	fast := head
 
-	for head != nil {
-		// 记忆化搜索 O(n)
-		if _, exists := set[head]; exists {
+	// 循环条件
+	for fast != nil && fast.Next != nil {
+		// 4. 联动
+		head = head.Next
+		fast = fast.Next.Next
+		// 计算
+		if fast == head {
 			return true
-		} else {
-			// 记忆
-			set[head] = true
-			// 后移
-			head = head.Next
 		}
 	}
 
