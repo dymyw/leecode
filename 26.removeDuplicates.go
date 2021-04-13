@@ -1,5 +1,7 @@
 package dymyw_leecode
 
+// tags: Array
+
 func removeDuplicates(nums []int) int {
 	// 双指针：slow
 	slow := 0
