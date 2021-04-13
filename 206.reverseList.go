@@ -14,9 +14,16 @@ func reverseList(head *ListNode) *ListNode {
 	var prev *ListNode
 	cur := head
 
+	// 循环
 	for cur != nil {
-		// 后移, 后移, 反转
-		prev, cur, cur.Next = cur, cur.Next, prev
+		//// 计算
+		//x := cur.Next
+		//cur.Next = prev
+		//// 4. 联动
+		//prev, cur = cur, x
+
+		// 反转，后移，后移
+		cur.Next, prev, cur = prev, cur, cur.Next
 	}
 
 	// cur == nil
