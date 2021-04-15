@@ -19,7 +19,7 @@ func (as *ArrayStack) Push(x interface{}) {
 func (as *ArrayStack) Pop() interface{} {
 	lastPos := len(as.arr) - 1
 	x := as.arr[lastPos]
-	as.arr = as.arr[0:lastPos]
+	as.arr = as.arr[:lastPos]
 
 	return x
 }
