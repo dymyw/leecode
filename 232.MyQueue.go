@@ -50,6 +50,7 @@ func (this *MyQueue) Empty() bool {
 	return len(this.inStack) == 0 && len(this.outStack) == 0
 }
 
+
 // outStack.Push(inStack.Pop())
 func (this *MyQueue) in2out() {
 	for len(this.inStack) > 0 {
