@@ -2,7 +2,7 @@ package LinkedList
 
 // ListNode 链表节点
 type ListNode struct {
-	Val int
+	Val interface{}
 	Next *ListNode
 }
 
