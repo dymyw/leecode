@@ -8,6 +8,6 @@ type ListNode struct {
 
 // LinkedList 单链表
 type LinkedList struct {
-	head *ListNode
-	size uint
+	Head *ListNode
+	Size uint
 }

@@ -9,7 +9,7 @@ type DoublyListNode struct {
 
 // DoublyLinkedList 双向链表
 type DoublyLinkedList struct {
-	head *DoublyListNode
-	tail *DoublyListNode
-	size uint
+	Head *DoublyListNode
+	Tail *DoublyListNode
+	Size uint
 }
