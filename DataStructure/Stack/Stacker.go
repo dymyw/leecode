@@ -1,10 +1,10 @@
 package Stack
 
-// 栈
+// Stacker 栈
 type Stacker interface {
-	// 入栈
+	// Push 入栈
 	Push(value interface{})
 
-	// 出栈
+	// Pop 出栈
 	Pop() interface{}
 }

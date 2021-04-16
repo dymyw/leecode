@@ -12,3 +12,16 @@ type DoublyListNode struct {
 	Next *DoublyListNode
 	Prev *DoublyListNode
 }
+
+// LinkedList 单链表
+type LinkedList struct {
+	head *ListNode
+	size uint
+}
+
+// DoublyLinkedList 双向链表
+type DoublyLinkedList struct {
+	head *ListNode
+	tail *ListNode
+	size uint
+}
