@@ -23,3 +23,15 @@ func (as *ArrayStack) Pop() interface{} {
 
 	return x
 }
+
+// Top 获取栈顶元素
+func (as *ArrayStack) Top() interface{} {
+	lastPos := len(as.arr) - 1
+
+	return as.arr[lastPos]
+}
+
+// Empty 是否为空
+func (as *ArrayStack) Empty() bool {
+	return len(as.arr) == 0
+}

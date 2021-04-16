@@ -7,4 +7,10 @@ type Stacker interface {
 
 	// Pop 出栈
 	Pop() interface{}
+
+	// Top 获取栈顶元素
+	Top() interface{}
+
+	// Empty 是否为空
+	Empty() bool
 }
