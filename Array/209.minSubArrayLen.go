@@ -1,4 +1,4 @@
-package dymyw_leecode
+package Array
 
 import "math"
 
@@ -9,6 +9,7 @@ func minSubArrayLen(target int, nums []int) int {
 	// 最大数
 	num, sum := math.MaxInt32, 0
 
+	// 滑动窗口
 	for r < len(nums) {
 		// 计算
 		sum += nums[r]

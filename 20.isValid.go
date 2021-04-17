@@ -1,5 +1,7 @@
 package dymyw_leecode
 
+// tags: Stack
+
 func isValid(s string) bool {
 	// 奇偶判断
 	if len(s) & 1 == 1 {
