@@ -1,5 +1,7 @@
 package dymyw_leecode
 
+// tags: Array、Map
+
 func twoSum(nums []int, target int) []int {
 	// 引入字典
 	maps := make(map[int]int)
