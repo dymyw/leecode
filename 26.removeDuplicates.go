@@ -3,22 +3,20 @@ package dymyw_leecode
 // tags: Array
 
 func removeDuplicates(nums []int) int {
-	// 双指针：slow
+	// 双指针
 	slow := 0
 
-	// 明确循环移动的是 fast 指针
+	// 循环
 	for fast := 1; fast < len(nums); fast++ {
-		// slow 指针联动条件
-		if nums[slow] != nums[fast] {
+		// 计算
+		if nums[fast] != nums[slow] {
+			// 联动
 			slow++
-
-			// 值操作
-			if nums[slow] != nums[fast] {
-				nums[slow] = nums[fast]
-			}
+			// 计算
+			nums[slow] = nums[fast]
 		}
 	}
 
-	// slow 最后指向的就是需要计算的结果
+	// 返回某个指针的状态
 	return slow + 1
 }
