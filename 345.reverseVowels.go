@@ -10,11 +10,15 @@ func reverseVowels(s string) string {
 	// for 的特殊写法
 	for l, r := 0, len(b) - 1; l < r; {
 		// 定位
-		for l < r && !isVowel(b[l]) {
+		if !isVowel(b[l]) {
 			l++
+			// 继续
+			continue
 		}
-		for l < r && !isVowel(b[r]) {
+		if !isVowel(b[r]) {
 			r--
+			// 继续
+			continue
 		}
 		// 运算
 		b[l], b[r] = b[r], b[l]
