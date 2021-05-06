@@ -1,12 +1,7 @@
 package Code
 
-import "dymyw-leecode/DataStructure/LinkedList"
-
 // 数据结构：LinkedList
 // 算法：多指针
-
-// ListNode 别名类型
-type ListNode = LinkedList.ListNode
 
 /**
  * Definition for singly-linked list.
