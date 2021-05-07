@@ -1,6 +1,7 @@
-package dymyw_leecode
+package Code
 
-// tags: LinkedList、Set
+// 数据结构：LinkedList
+// 算法：记忆化搜索
 
 /**
  * Definition for singly-linked list.
@@ -10,20 +11,23 @@ package dymyw_leecode
  * }
  */
 func detectCycle(head *ListNode) *ListNode {
-	// 引入集合
-	set := map[*ListNode]bool{}
+	// 引入 set
+	set := make(map[*ListNode]bool)
 
+	// 循环条件
 	for head != nil {
 		// 记忆化搜索 O(n)
 		if _, exists := set[head]; exists {
 			return head
-		} else {
-			// 记忆
-			set[head] = true
-			// 后移
-			head = head.Next
 		}
+
+		// 记忆
+		set[head] = true
+
+		// 后移
+		head = head.Next
 	}
 
+	// 返回结果
 	return nil
 }
