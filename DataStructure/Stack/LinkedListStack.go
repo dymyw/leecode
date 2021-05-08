@@ -14,6 +14,7 @@ func NewLinkedListStack() *LinkedListStack {
 
 // Push 入栈
 func (lls *LinkedListStack) Push(value interface{}) {
+	// 链表头操作
 	node := &LinkedList.ListNode{
 		Val: value,
 		Next: lls.node,
@@ -23,6 +24,12 @@ func (lls *LinkedListStack) Push(value interface{}) {
 
 // Pop 出栈
 func (lls *LinkedListStack) Pop() interface{} {
+	// 判断是否为空
+	if lls.Empty() {
+		return nil
+	}
+
+	// 链表头操作
 	x := lls.node.Val
 	lls.node = lls.node.Next
 
@@ -31,6 +38,11 @@ func (lls *LinkedListStack) Pop() interface{} {
 
 // Top 获取栈顶元素
 func (lls *LinkedListStack) Top() interface{} {
+	// 判断是否为空
+	if lls.Empty() {
+		return nil
+	}
+
 	return lls.node.Val
 }
 
