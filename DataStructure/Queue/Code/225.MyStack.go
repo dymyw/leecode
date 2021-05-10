@@ -1,4 +1,7 @@
-package dymyw_leecode
+package Code
+
+// 数据结构：Queue、Array
+// 算法：数组队列基本操作; 元素入队后，其它的元素重新依次出队，再入队;
 
 type MyStack struct {
 	inQueue, outQueue []int
