@@ -1,4 +1,7 @@
-package dymyw_leecode
+package Code
+
+// 数据结构：Stack
+// 算法：数组栈基本操作; outStack 为空，把 inStack 中的成员迁移到 outStack;
 
 type MyQueue struct {
 	inStack, outStack []int
