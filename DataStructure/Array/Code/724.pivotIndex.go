@@ -1,6 +1,7 @@
-package Array
+package Code
 
-// tags: Array
+// https://leetcode-cn.com/problems/find-pivot-index/
+// 数据结构: Array
 
 func pivotIndex(nums []int) int {
 	// 初始化其它值

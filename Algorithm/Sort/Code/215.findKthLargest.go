@@ -1,6 +1,8 @@
-package Array
+package Code
 
-// tags: Array
+// https://leetcode-cn.com/problems/kth-largest-element-in-an-array/
+// 数据结构: Array
+// 算法：快速排序
 
 func findKthLargest(nums []int, k int) int {
 	nums = QuickSort(nums)

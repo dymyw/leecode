@@ -1,8 +1,10 @@
-package Array
+package Code
 
-// tags: Array
+// https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array-ii/
+// 数据结构：Array
+// 算法：多指针算法
 
-func removeDuplicates(nums []int) int {
+func removeDuplicates2(nums []int) int {
 	if len(nums) < 2 {
 		return len(nums)
 	}

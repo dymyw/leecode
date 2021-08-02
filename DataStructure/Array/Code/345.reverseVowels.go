@@ -1,6 +1,8 @@
-package Array
+package Code
 
-// tags: Array、String
+// https://leetcode-cn.com/problems/reverse-vowels-of-a-string/
+// 数据结构: Array、String
+// 算法：多指针算法
 
 func reverseVowels(s string) string {
 	// string to byte

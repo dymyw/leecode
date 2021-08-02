@@ -1,6 +1,8 @@
-package Array
+package Code
 
-// tags: Array、String
+// https://leetcode-cn.com/problems/valid-palindrome/
+// 数据结构: Array、String
+// 算法：指针碰撞算法
 // 马拉车算法
 // https://www.mayw.tech/work/tech/2019/04/02/Manacher's-Algorithm-%E9%A9%AC%E6%8B%89%E8%BD%A6%E7%AE%97%E6%B3%95.html
 

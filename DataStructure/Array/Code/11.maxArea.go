@@ -1,6 +1,8 @@
-package Array
+package Code
 
-// tags: Array
+// https://leetcode-cn.com/problems/container-with-most-water/
+// 数据结构: Array、String
+// 算法：指针碰撞算法
 
 func maxArea(height []int) int {
 	l, r := 0, len(height) - 1;

@@ -1,6 +1,8 @@
-package Array
+package Code
 
-// tags: Array
+// https://leetcode-cn.com/problems/merge-sorted-array/
+// 数据结构: Array
+// 算法：多指针算法
 
 func merge(nums1 []int, m int, nums2 []int, n int)  {
 	// 定义尾指针

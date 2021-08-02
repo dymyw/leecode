@@ -1,6 +1,8 @@
-package Array
+package Code
 
-// tags: Array
+// https://leetcode-cn.com/problems/move-zeroes/
+// 数据结构：Array
+// 算法：多指针算法
 
 func moveZeroes(nums []int)  {
 	// 终止条件

@@ -1,8 +1,10 @@
-package Array
+package Code
 
 import "math"
 
-// tags: Array
+// https://leetcode-cn.com/problems/minimum-size-subarray-sum/
+// 数据结构: Array
+// 算法：多指针算法（循环联动）
 
 func minSubArrayLen(target int, nums []int) int {
 	l, r := 0, 0
